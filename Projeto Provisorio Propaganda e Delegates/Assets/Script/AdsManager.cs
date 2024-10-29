@@ -5,6 +5,9 @@ using UnityEngine.Advertisements;
 
 public class AdsManager : MonoBehaviour , IUnityAdsInitializationListener, IUnityAdsShowListener
 {
+    public string projetoID = "5721741";
+    public string bannerID = "Banner_Android";
+    
     public void OnInitializationComplete()
     {
         
@@ -35,10 +38,17 @@ public class AdsManager : MonoBehaviour , IUnityAdsInitializationListener, IUnit
         
     }
 
+    
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Advertisement.Initialize(projetoID, true, this);
+        Advertisement.Banner.Show("Banner_Android");
+
+        Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
     }
 
 
