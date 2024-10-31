@@ -372,7 +372,7 @@ GameObject:
   - component: {fileID: 241914803}
   - component: {fileID: 241914802}
   m_Layer: 5
-  m_Name: Pontos
+  m_Name: PontosDoJogador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -392,10 +392,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 192310874}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.77375, y: 0.6}
-  m_AnchorMax: {x: 0.95250005, y: 0.66333336}
-  m_AnchoredPosition: {x: -0.000030518, y: 0}
-  m_SizeDelta: {x: -0.000076294, y: 0}
+  m_AnchorMin: {x: 0.85125005, y: 0.6}
+  m_AnchorMax: {x: 0.95250005, y: 0.65500003}
+  m_AnchoredPosition: {x: -0.000061035, y: 0}
+  m_SizeDelta: {x: -0.000045776, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &241914802
 MonoBehaviour:
@@ -1088,6 +1088,7 @@ MonoBehaviour:
   bannerID: Banner_Android
   interstitialID: Interstitial_Android
   recompensaID: Recompensa_Android
+  pontosDoJogador: {fileID: 241914802}
   pontos: 0
 --- !u!4 &1698810345
 Transform:
