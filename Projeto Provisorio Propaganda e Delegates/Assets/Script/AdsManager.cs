@@ -49,8 +49,7 @@ public class AdsManager : MonoBehaviour , IUnityAdsInitializationListener, IUnit
     {
         
         Debug.Log("Valor recebido: " + pontos);
-        pontos = valor;
-        pontos += pontos;
+        pontos += valor;
         pontosDoJogador.text = pontos.ToString();
         
     }
@@ -58,8 +57,7 @@ public class AdsManager : MonoBehaviour , IUnityAdsInitializationListener, IUnit
     public void ValorCompleto(int valor)
     {
         Debug.Log("Valor dobrado: " + pontos);
-        pontos  = valor * 2;
-        pontos += pontos;
+        pontos  += valor * 2; 
         pontosDoJogador.text = pontos.ToString();
     }
 
